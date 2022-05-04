@@ -1,0 +1,10 @@
+*{
+    margin: 1rem;
+}
+
+.text-something{
+    color: orangered;
+}
+.text-styling{
+    font-style: italic;
+}

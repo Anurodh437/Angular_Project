@@ -1,2 +1,15 @@
 <app-navbar></app-navbar>
-<div class="text-primary fw-bold">Main Body</div>
+<div class="container">
+  <div class="text-center fw-bold m-2">
+    <span class="fs-1">From AppComponent</span>
+    <h1>{{ message }}</h1>
+  </div>
+  <app-test (childEvent)="message = $event" [parentData]="title"></app-test> -->
+  <nav class="navbar">
+    <a class="nav" routerLink="/departments">First Page</a>
+    <a routerLink="/employees">Second Page</a>
+    <a routerLink="/employees">Third Page</a>
+  </nav>
+  <app-forms></app-forms>
+  <router-outlet></router-outlet>
+</div>
